@@ -1,0 +1,46 @@
+<!-- copyrights @ Muhammad Ahmad Sultan -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muhammad Ahmad Sultan" />
+    <meta
+      name="description"
+      content="SchedulrSync: A Task Tracking Application to organize and manage your tasks."
+    />
+    <meta
+      name="keywords"
+      content="Task Management, Task Tracker, SchedulrSync, HTML, CSS, JavaScript"
+    />
+    <title>SchedulrSync - Task Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>SchedulrSync - Task Tracker</h1>
+
+      <div class="task-input">
+        <input
+          type="text"
+          id="task-title-input"
+          placeholder="Give this Task a Title"
+          required
+        />
+        <textarea
+          id="task-desc-input"
+          rows="4"
+          placeholder="Add Task Description here"
+          required
+        ></textarea>
+        <input type="file" id="task-image-input" accept="image/*" />
+        <button onclick="handleTaskAddition()">Add Task</button>
+      </div>
+
+      <div class="task-list" id="task-list-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
